@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Testing">
+        <classes>
+            <class name="DataDrivenFramework.SauceLabLoginTest">
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+            <class name="DataDrivenFramework.SauceLabLoginTest_FromExcel">
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

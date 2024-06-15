@@ -15,7 +15,6 @@ public class SauceLabLoginTest_FromExcel {
 
     @BeforeMethod
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\ddroy\\OneDrive\\Desktop\\Drivers\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
@@ -48,7 +47,7 @@ public class SauceLabLoginTest_FromExcel {
     public Object[][] passData() {
 
         ExcelFramework excel = new ExcelFramework();
-        excel.loadExcel("C:\\Users\\ddroy\\IdeaProjects\\Nexxvali_QA_Codes\\src\\test\\java\\DataDrivenFramework\\SauceLabCredentials.xlsx");
+        excel.loadExcel("/Users/debopriyadebroy/Documents/Developer/Nexxvali /Test_Automation_Codes/src/test/java/DataDrivenFramework/SauceLabCredentials.xlsx");
         int rows = excel.getRowCount("Sheet1");
         Object[][] data = new Object[rows][2];
         for (int i = 0; i < rows; i++) {

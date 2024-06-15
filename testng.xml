@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Group Test Suite">
+    <test name="Login Test">
+        <groups>
+            <run>
+                <include name="login"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="GroupTest.GroupTestExample"/>
+        </classes>
+    </test>
+    <test name="Logout Test">
+        <groups>
+            <run>
+                <include name="logout"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="GroupTest.GroupTestExample"/>
+        </classes>
+    </test>
+</suite>

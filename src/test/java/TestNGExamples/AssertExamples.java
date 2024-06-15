@@ -9,8 +9,6 @@ public class AssertExamples {
     public void testAssertions() {
         int actual = 5;
         int expected = 5;
-        int[] actualArray = {1, 2, 3};
-        int[] expectedArray = {1, 2, 3};
         Object obj1 = null;
         Object obj2 = new Object();
         Object obj3 = obj2;
